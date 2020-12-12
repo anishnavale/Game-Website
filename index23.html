@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>GAMES</title>
+        <link rel="stylesheet" href="style23.css">
+    </head>
+    <body>
+        <div class="main">   
+        </div>
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="images/trial1.jfif" class="G1">
+            <div id="circle">
+             <div class="Game one">
+                <img src= "images/triall.png">
+                <div>
+                    <h1>Game 1</h1>
+                </div>
+             </div>
+             
+             <div class="Game two">
+                <img src= "images/triall.png">
+                <div>
+                    <h1>Game 2</h1>
+                </div>
+             </div>
+             <div class="Game three">
+                <img src= "images/triall.png">
+                <div>
+                    <h1>Game 3</h1>
+                </div>
+             </div>
+             <div class="Game four">
+                <img src= "images/triall.png">
+                <div>
+                    <h1>Game 4</h1>
+                </div>
+             </div>
+            </div>   
+            <div class="arrows">
+                <img src="Images/upbtn.png" id="up">
+                <h2>GAMES</h2>
+                <img src="Images/upbtn.png" id="down">
+            </div>  
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var up = document.getElementById("up");
+            var down = document.getElementById("down");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            up.onclick = function()
+            {
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    //circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+            }
+            down.onclick = function()
+            {
+                    rotateSum = rotateValue + "rotate(90deg)";
+                    //circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+            }
+
+        </script>
+
+    </body>
+
+</html>
