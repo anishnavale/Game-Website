@@ -1,5 +1,10 @@
 <html>
     <head>
+        <!--<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
         <title>GAMES</title>
         <link rel="stylesheet" href="style23.css">
     </head>
@@ -8,39 +13,45 @@
         </div>
         <div class="info">
             <div class="overlay"></div>
-            <img src="images/trial1.jfif" class="G1">
+            <img src="Images/logo.png" class="G1">
             <div id="circle">
              <div class="Game one">
-                <img src= "images/triall.png">
+                <img src= "Images/hextris.png">
                 <div>
-                    <h1>Game 1</h1>
+                    <a href="courses.html" class="button button4"><strong>Hextris</strong></a>
                 </div>
              </div>
              
              <div class="Game two">
-                <img src= "images/triall.png">
+                <img src= "Images/snake.png">
                 <div>
-                    <h1>Game 2</h1>
+                    <a href="courses.html" class="button button4"><strong>The Snake Game</strong></a>
                 </div>
              </div>
              <div class="Game three">
-                <img src= "images/triall.png">
+                <img src= "Images/linguistics.png">
                 <div>
-                    <h1>Game 3</h1>
+                    <a href="courses.html" class="button button4"><strong>Linguistics Challenge</strong></a>
                 </div>
              </div>
              <div class="Game four">
-                <img src= "images/triall.png">
+                <img src= "images/memory.png">
                 <div>
-                    <h1>Game 4</h1>
+                    <a href="courses.html" class="button button4"><strong>The Memory Game</strong></a>
                 </div>
              </div>
             </div>   
             <div class="arrows">
+                <div>
+                    <a href="login.html" class="button3"><strong>Login</strong></a>
+                </div>
                 <img src="Images/upbtn.png" id="up">
-                <h2>GAMES</h2>
-                <img src="Images/upbtn.png" id="down">
-            </div>  
+                <h2  style="color:black;">GAMES</h2>
+                <img src="Images/dwnbtn.png" id="down">
+                <div class="scripts">
+                <img src="Images/frame.png">
+                </div>
+        </div>
         </div>
 
         <script>
@@ -54,14 +65,15 @@
             up.onclick = function()
             {
                     rotateSum = rotateValue + "rotate(-90deg)";
-                    //circle.style.transform = rotateSum;
+                    circle.style.transform = rotateSum;
                     rotateValue = rotateSum;
             }
             down.onclick = function()
             {
                     rotateSum = rotateValue + "rotate(90deg)";
-                    //circle.style.transform = rotateSum;
+                    circle.style.transform = rotateSum;
                     rotateValue = rotateSum;
+
             }
 
         </script>
