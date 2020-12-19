@@ -1,7 +1,14 @@
-*{
+{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+h1{
+    color: black;
+}
+h2{
+      font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .main{
@@ -9,7 +16,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    background: linear-gradient(to left, #9c27b0, #8ecdff);
 }
 
 .info{
@@ -17,7 +24,7 @@
     height: 1000px;
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: -30%;
     transform: translateY(-50%);
 }
 
@@ -34,7 +41,7 @@
 }
 
 .game img{
-    width: 70px;
+    width: 100px;
 }
 .game{
     position: absolute;
@@ -47,11 +54,11 @@
 
 .one{
     color: white;
-    top: 450px;
-    right: 50px;
+    top: 440px;
+    right: 140px;
 }
 .two{
-    top: 150px;
+    top: 130px;
     left: 350px;
     transform: rotate(-90deg);
 }
@@ -61,37 +68,37 @@
     transform: rotate(-180deg);
 }
 .four{
-    bottom: 150px;
-    right: 350px;
+    bottom: 140px;
+    right: 370px;
     transform: rotate(-270deg);
 }
 .G1{
     width: 1000x;
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 58%;
+    left: 40%;
     transform: translateY(-50%);
     z-index: 1;
 }
 .arrows{
     position: absolute;
-    right: -20%;
+    right: -5%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+    float: left;
 }
 .arrows h2{
     margin: 15px 0;
     color: #fff;   
 }
 #up{
-    width: 15px;
+    width: 100px;
     cursor: pointer;
 }
 #down{
-    width: 15px;
+    width: 100px;
     cursor: pointer;
-    transform: rotate(180deg);
 }
 .overlay{
     width: 0;
@@ -105,3 +112,45 @@
     top: 0;
 
 }
+.button {
+ background-color: #024d69;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-size: 16px;
+ margin: 4px 2px;
+ margin-bottom: 100px;
+ transition-duration: 0.4s;
+ cursor: pointer;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+.button4:hover {background-color: #630399;
+}
+
+.scripts{
+    position: absolute;
+    left: 110px;
+    top: -10px;
+}
+
+.button3 {
+    position: absolute;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: black;
+    color: #0ff2c1;
+    right: -230px;
+    top: -170px;
+    border-radius: 8px;}
