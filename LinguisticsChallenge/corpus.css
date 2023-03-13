@@ -1,0 +1,49 @@
+
+body{
+	background-image: url("wooden.png");
+}
+
+h1 {text-align: center;
+	color: #f5efd0;
+font-family: Courier New;}
+
+
+.drop {
+   background-color: #f00a4f;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+#disp_ins {
+	color: #f5efd0;
+	font-size: 20px;
+}
+
+#format {
+	color: #f5efd0;
+	font-size: 20px;
+}
+
+#words {
+	color: #f5efd0;
+	font-size: 20px;
+}
+
+#answerc {
+	color: #0be353;
+	font-size: 22px;
+}
+
+#answerw {
+	color: #ed091c;
+	font-size: 22px;
+}
+
+#correctanswer {
+	color: #f5efd0;
+	font-size: 20px;
+}

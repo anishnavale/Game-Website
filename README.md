@@ -1,2 +1,2 @@
 # Game-Website
-WebTechnology Mini Project
+Wen Technology Mini Project

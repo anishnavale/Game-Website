@@ -1,0 +1,63 @@
+ul {
+  list-style-type: none;
+  align-items: flex-start;
+}
+
+body {
+  background: linear-gradient(to left, #9c27b0, #8ecdff);
+}
+
+.Register1{
+  color: White;
+  align-content: center;
+  padding-top: 5px;
+}
+
+.Title1 {
+  background-color: black;
+  height: 50px;
+  width: 50%;
+  margin-left: 340px;
+  align-self: center;
+}
+
+.Info {
+  background: linear-gradient(to left, #9c27b0, #8ecdff);
+  align-items: center;
+  text-align: center;
+  text-emphasis-style: circle;
+  text-decoration-style: solid;
+}
+
+button {
+  align-self: center;
+}
+
+input,
+select {
+  width: 30%;
+  height: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 20;
+  font-family: sans-serif;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.vbutton {
+  cursor: pointer;
+  shape-outside: border-box;
+  color: white;
+  text-emphasis: bold;
+  width: 150px;
+  height: 50px;
+  background-color: maroon;
+  opacity: 0.6;
+  border-style: hidden;
+}

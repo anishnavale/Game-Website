@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <link rel="stylesheet" href="./form.css">
+  <!-- <script src="./formValidation.js"></script> -->
+</head>
+
+<body>
+  <div class="Title1" style="text-align: center;">
+    <h1 class="Register1">Register</h1>
+  </div>
+  <div class="Info">
+    <form id="registrationForm" onsubmit="validate()" method="POST">
+      <ul>
+        <br>
+        <li><label for="Name">Name: *</label>&nbsp;&nbsp;&nbsp;<span id="nameError"></span></li>
+        <li>
+          <input type="text" name="name" id="name" placeholder="Enter your name here..." required>
+          <br>
+        </li>
+        <br>
+        <li><label for="age">Age: *</label>&nbsp;&nbsp;&nbsp;<span id="ageError"></span></li>
+        <li><input type="number" name="age" id="age" placeholder="Enter your age here..." required></li>
+        <br>
+        <li><label for="country">Country: </label></li>
+        <li><select name="country" required>
+            <option selected="" value="default">(Please select a Country)</option>
+            <option value="IND">India</option>
+            <option value="BHU">Bhutan</option>
+            <option value="NEP">Nepal</option>
+            <option value="CHI">China</option>
+            <option value="SRI">Sri Lanka</option>
+            <option value="US">US</option>
+            <option value="JAP">Japan</option>
+            <option value="AUS">Australia</option>
+          </select></li>
+        <br>
+        <li><span><label for="uname">Username: *</label></span>&nbsp;&nbsp;&nbsp;<span id="unameError"></span></li>
+        <li><input type="text" name="uname" id="uname" placeholder="Enter the unsername you want here..." required></li>
+        <br>
+        <li><label for="email">E-mail Address: *</label>&nbsp;&nbsp;&nbsp;<span id="emailError"></span></li>
+        <li><input type="text" name="email" id="email" value="" placeholder="Enter your E-mail address here..." required></li>
+        <br>
+        <li><label for="pass0">Password: *</label>&nbsp;&nbsp;&nbsp;<span id="passError">[The password must be
+            8-13 characters in length and contain one of each: (a-z), (A-Z), (0-9), and special characters.]</span></li>
+        <li><input type="password" name="pass0" id="p0" required></li>
+        <br>
+        <li><label for="pass1">Confirm Password: *</label>&nbsp;&nbsp;&nbsp;<span id="matchError"></span></li>
+        <li><input type="password" name="pass1" id="p1" required></li>
+        <br>
+      </ul>
+      <div style="text-align: center;">
+        <button type="button" value="" class="vbutton" onclick="validate()">Register</button>
+      </div>
+      <br>
+    </form>
+  </div>
+  <script src="./formValidation.js"></script>
+</body>
+
+</html>
